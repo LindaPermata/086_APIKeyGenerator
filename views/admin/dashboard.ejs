@@ -1,12 +1,53 @@
 <%- include('../partials/header', { title: title }) %>
 
+<style>
+  body {
+    background-color: #fde6f3;
+  }
+
+  .card {
+    background-color: #ffe3f3;
+    border: none;
+    border-radius: 12px;
+  }
+
+  .table thead {
+    background-color: #f7c3df !important;
+    color: #832b65;
+  }
+
+  .table tbody tr:hover {
+    background-color: #fbe0f1 !important;
+  }
+
+  .badge.bg-success {
+    background-color: #d86eae !important; /* pink green-ish */
+  }
+  .badge.bg-danger {
+    background-color: #ee88c7 !important;
+  }
+
+  .btn-primary {
+    background-color: #ee88c7;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #d86eae;
+  }
+
+  h1 {
+    color: #bb3f8c;
+  }
+</style>
+
 <h1 class="mb-4">Daftar API Keys</h1>
 
 <div class="card shadow-sm">
   <div class="card-body">
     <div class="table-responsive">
       <table class="table table-hover align-middle">
-        <thead class="table-light">
+        <thead>
           <tr>
             <th scope="col">Nama Lengkap</th>
             <th scope="col">Email</th>

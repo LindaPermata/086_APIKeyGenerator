@@ -1,5 +1,69 @@
 <%- include('../partials/header', { title: title }) %>
 
+<style>
+  body {
+    background-color: #fde6f3;
+  }
+
+  .card {
+    background-color: #ffe3f3;
+    border: none;
+    border-radius: 12px;
+  }
+
+  .card-header {
+    background-color: #ee88c7 !important;
+    color: white !important;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .list-group-item {
+    background-color: #fff0f7;
+    border: none;
+    border-bottom: 1px solid #f3c2dd;
+  }
+
+  pre {
+    background-color: #fbe0f1 !important;
+    color: #a63f7d;
+    font-weight: bold;
+  }
+
+  .badge.bg-success {
+    background-color: #d86eae !important;
+  }
+  .badge.bg-danger {
+    background-color: #ee88c7 !important;
+  }
+
+  /* Card aksi berbahaya */
+  .border-danger {
+    border-color: #ee88c7 !important;
+  }
+
+  .bg-danger {
+    background-color: #ee88c7 !important;
+  }
+
+  .btn-danger {
+    background-color: #ee88c7;
+    border: none;
+  }
+  .btn-danger:hover {
+    background-color: #d86eae;
+  }
+
+  .btn-secondary {
+    background-color: #f7c3df;
+    border: none;
+    color: #6a2e4e;
+  }
+  .btn-secondary:hover {
+    background-color: #e8a7cc;
+  }
+</style>
+
+
 <div class="row">
   <div class="col-md-8">
     <div class="card shadow-sm">
@@ -19,7 +83,7 @@
           </li>
           <li class="list-group-item">
             <strong>API Key:</strong>
-            <pre class="bg-light p-2 rounded mt-1"><code><%= detail.api_key %></code></pre>
+            <pre class="p-2 rounded mt-1"><code><%= detail.api_key %></code></pre>
           </li>
           <li class="list-group-item">
             <strong>Status:</strong>
@@ -59,6 +123,5 @@
     <a href="/admin/dashboard" class="btn btn-secondary w-100 mt-3">Kembali ke Dashboard</a>
   </div>
 </div>
-
 
 <%- include('../partials/footer') %>

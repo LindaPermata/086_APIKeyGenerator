@@ -4,19 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= title %></title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
-    body { background-color: #f4f7f6; }
+    body {
+      background-color: #fde6f3; /* Soft pink background */
+    }
+
+    /* Navbar Pink */
+    .navbar {
+      background-color: #ee88c7 !important;
+    }
+
+    .navbar-brand {
+      color: white !important;
+      font-weight: bold;
+    }
+
+    .nav-link {
+      color: #fff0f7 !important;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #ffe3f3 !important;
+    }
+
+    /* Navbar toggler pink */
+    .navbar-toggler {
+      border-color: #ffe3f3 !important;
+    }
+    .navbar-toggler-icon {
+      filter: invert(97%) sepia(8%) saturate(545%) hue-rotate(289deg) brightness(110%) contrast(90%);
+    }
+
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+<nav class="navbar navbar-expand-lg shadow-sm">
   <div class="container">
-    <a class="navbar-brand" href="/admin/dashboard">Admin Dashboard</a>
+    <a class="navbar-brand" href="/admin/dashboard">💗 Admin Dashboard</a>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
